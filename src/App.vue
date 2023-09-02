@@ -30,7 +30,7 @@ import InputField from './components/InputField.vue'
 import List from './components/List.vue'
 import { useTodoList } from './stores/todoList';
 const { allTodo } = useTodoList()
-const active = ref('fav')
+const active = ref('all')
 
 </script>
 
