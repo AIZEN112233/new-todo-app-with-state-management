@@ -23,7 +23,7 @@ export const useTodoList = defineStore('counter', () => {
         allTodo.value = JSON.parse(localStorage.getItem('todos'))
     }
     watch(allTodo.value, (value) =>{
-        localStorage.setItem('todos' , JSON.stringify(value))
+        localStorage.setItem('todos', JSON.stringify(value))
     },{deep: true})
 
     return { allTodo, deleteTodo, toggleFav, addTodo}
